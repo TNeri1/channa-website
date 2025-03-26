@@ -3,13 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Resume from "./resume/page";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ProfileImage from "../components/ProfileImage";
 import OceanBackground from "../components/OceanBackground";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   const [expandedCase, setExpandedCase] = useState<number | null>(null);
@@ -58,7 +57,7 @@ export default function Home() {
             
             <div className="max-w-2xl text-center">
               <p className="mb-6">
-                Welcome to my personal website! I'm a passionate Hospitality and Tourism Management student 
+                Welcome to my personal website! I&apos;m a passionate Hospitality and Tourism Management student 
                 at Brigham Young University-Hawaii with a love for cultural experiences and exceptional service.
               </p>
             </div>
@@ -97,13 +96,13 @@ export default function Home() {
                 </p>
                 
                 <p className="mb-4">
-                  At Brigham Young University-Hawaii, I'm expanding my knowledge of hospitality management, sustainable 
-                  tourism practices, and cross-cultural communication. I'm particularly interested in how tourism can 
+                  At Brigham Young University-Hawaii, I&apos;m expanding my knowledge of hospitality management, sustainable 
+                  tourism practices, and cross-cultural communication. I&apos;m particularly interested in how tourism can 
                   be leveraged as a force for good in developing economies.
                 </p>
                 
                 <p className="mb-4">
-                  In my free time, I enjoy exploring Hawaii's beautiful beaches, volunteering in community projects, 
+                  In my free time, I enjoy exploring Hawaii&apos;s beautiful beaches, volunteering in community projects, 
                   and trying new cuisine from around the world.
                 </p>
                 
@@ -179,14 +178,14 @@ export default function Home() {
                     
                     <h4 className="font-medium mb-2">Environmental Impacts</h4>
                     <p className="mb-4">
-                      Hurghada's rapid tourism growth has led to environmental concerns, particularly affecting its marine ecosystems. 
+                      Hurghada&apos;s rapid tourism growth has led to environmental concerns, particularly affecting its marine ecosystems. 
                       The expansion of coastal tourism has resulted in localized pollution, habitat loss, and resource depletion, 
                       threatening the health of coral reefs and marine biodiversity.
                     </p>
                     
                     <h4 className="font-medium mb-2">Socio-Cultural Impacts</h4>
                     <p className="mb-4">
-                      The influx of tourists has strained Hurghada's infrastructure, leading to overcrowding and challenges in waste management. 
+                      The influx of tourists has strained Hurghada&apos;s infrastructure, leading to overcrowding and challenges in waste management. 
                       Additionally, the dominance of tourism has impacted local cultural practices, with traditional lifestyles adapting to 
                       meet tourist demands, potentially diluting cultural authenticity.
                     </p>
@@ -207,7 +206,7 @@ export default function Home() {
                     
                     <h4 className="font-medium mb-2">Socio-Cultural Preservation</h4>
                     <p className="mb-4">
-                      Aqaba's tourism development emphasizes community involvement, ensuring that local cultures and traditions are respected 
+                      Aqaba&apos;s tourism development emphasizes community involvement, ensuring that local cultures and traditions are respected 
                       and integrated into the tourism experience. This approach not only enriches the visitor experience but also empowers 
                       local communities, fostering economic and social benefits.
                     </p>
@@ -217,7 +216,7 @@ export default function Home() {
                       To effectively position Aqaba as a sustainable alternative to Hurghada, the following strategies are recommended:
                     </p>
                     <ol className="list-decimal list-inside space-y-2 mb-4">
-                      <li><span className="font-medium">Targeted Marketing Campaigns:</span> Highlight Aqaba's unique offerings, such as its relaxed atmosphere and affordability, to attract tourists seeking similar experiences to Hurghada.</li>
+                      <li><span className="font-medium">Targeted Marketing Campaigns:</span> Highlight Aqaba&apos;s unique offerings, such as its relaxed atmosphere and affordability, to attract tourists seeking similar experiences to Hurghada.</li>
                       <li><span className="font-medium">Infrastructure Development:</span> Invest in sustainable infrastructure that accommodates tourists without compromising environmental integrity or local lifestyles.</li>
                       <li><span className="font-medium">Community Engagement:</span> Involve local communities in tourism planning and decision-making processes to ensure that tourism development aligns with their needs and preserves cultural heritage.</li>
                       <li><span className="font-medium">Environmental Education:</span> Educate tourists on sustainable practices and the importance of preserving natural and cultural resources, fostering responsible tourism behaviors.</li>
@@ -273,7 +272,7 @@ export default function Home() {
                     
                     <h3 className="font-semibold text-lg mb-3">Why Choose Boracay?</h3>
                     <ul className="list-disc list-inside space-y-2 mb-4">
-                      <li><span className="font-medium">World-Renowned White Sand Beaches:</span> Boracay's White Beach is consistently ranked among the top beaches in the world. Its powdery white sand and crystal-clear waters provide the perfect setting for a relaxing getaway.</li>
+                      <li><span className="font-medium">World-Renowned White Sand Beaches:</span> Boracay&apos;s White Beach is consistently ranked among the top beaches in the world. Its powdery white sand and crystal-clear waters provide the perfect setting for a relaxing getaway.</li>
                       <li><span className="font-medium">Family-Friendly Activities:</span> From water sports and island hopping to cultural experiences and relaxation, Boracay caters to all age groups.</li>
                       <li><span className="font-medium">Luxury and Comfort:</span> The island offers a range of accommodations, from budget-friendly stays to high-end resorts, ensuring comfort for every family.</li>
                     </ul>
@@ -296,8 +295,8 @@ export default function Home() {
                     
                     <h4 className="font-medium mb-2">Day 3: Cultural and Leisure Activities</h4>
                     <ul className="list-disc list-inside ml-4 mb-3">
-                      <li>Morning: Visit to D'Talipapa Market for a local shopping experience</li>
-                      <li>Afternoon: Henna tattoo and souvenir shopping at D'Mall</li>
+                      <li>Morning: Visit to D&apos;Talipapa Market for a local shopping experience</li>
+                      <li>Afternoon: Henna tattoo and souvenir shopping at D&apos;Mall</li>
                       <li>Evening: Private family bonfire with storytelling by the beach</li>
                     </ul>
                     
@@ -394,7 +393,7 @@ export default function Home() {
                     <h4 className="font-medium mb-2">Franchising in the Hospitality Industry</h4>
                     <p className="mb-4">
                       Franchising allows businesses to expand while leveraging an established brand name and operational model. Popular franchises in 
-                      hospitality include global hotel chains like Marriott and Hilton, as well as fast-food brands such as McDonald's and Subway. 
+                      hospitality include global hotel chains like Marriott and Hilton, as well as fast-food brands such as McDonald&apos;s and Subway. 
                       This model benefits both franchisees and franchisors through shared resources and brand recognition.
                     </p>
                     
@@ -472,7 +471,7 @@ export default function Home() {
                       Throughout the simulation, our professor presents various real-world challenges, such as revenue 
                       fluctuations, operational cost management, guest satisfaction, and competitive pricing strategies. 
                       We analyze financial statements, adjust pricing models, allocate budgets, and develop innovative 
-                      strategies to enhance the hotel's performance.
+                      strategies to enhance the hotel&apos;s performance.
                     </p>
                     
                     <h3 className="font-semibold text-lg mb-3">Skills Developed</h3>

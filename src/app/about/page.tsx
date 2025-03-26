@@ -21,7 +21,7 @@ export default function About() {
         
         <h2 className="text-2xl font-semibold mt-8">Personal Interests</h2>
         <p className="text-lg">
-          Talk about your hobbies, interests, and what you're passionate about outside of work.
+          Talk about your hobbies, interests, and what you&apos;re passionate about outside of work.
         </p>
       </div>
     </div>

@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
       <p className="text-lg mb-8">
-        I'd love to hear from you! Please use the form below or reach out via email or social media.
+        I&apos;d love to hear from you! Please use the form below or reach out via email or social media.
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

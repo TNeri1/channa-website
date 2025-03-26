@@ -24,8 +24,8 @@ export default function Featured() {
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Featured By</h1>
       <p className="text-lg mb-8">
-        A collection of places where my work has been featured, interviews I've given, 
-        and recognition I've received.
+        A collection of places where my work has been featured, interviews I&apos;ve given, 
+        and recognition I&apos;ve received.
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
