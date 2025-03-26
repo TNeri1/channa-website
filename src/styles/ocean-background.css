@@ -1,0 +1,116 @@
+.ocean-background {
+  min-height: 100vh;
+  /* More tropical ocean gradient with Hawaiian blue tones */
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,112,253,1) 60%, rgba(79,155,255,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 18s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+/* Ocean waves overlay effect */
+.ocean-background::before,
+.ocean-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: repeat-x;
+  background-size: 100% 80px; /* Slightly larger waves */
+  opacity: 0.4; /* More visible waves */
+}
+
+.ocean-background::before {
+  height: 80px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E");
+  animation: wave 15s linear infinite;
+}
+
+.ocean-background::after {
+  height: 80px;
+  bottom: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='rgba(255,255,255,0.3)'/%3E%3C/svg%3E");
+  animation: wave 18s linear infinite reverse;
+}
+
+/* Palm leaves subtle background pattern */
+.ocean-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpath d='M40,60 C30,10 110,10 100,60 C130,15 180,60 150,80 C180,90 140,120 120,100 C150,150 70,150 100,100 C70,120 30,90 50,80 C20,60 70,15 40,60 Z' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1200px;
+  }
+}
+
+/* Make content stand out against the background but more transparent */
+.content-container {
+  background-color: rgba(255, 255, 255, 0.7); /* More transparent */
+  backdrop-filter: blur(5px); /* Gives a frosted glass effect */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.content-container:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Hawaiian-inspired accent colors for links and highlights */
+.hawaiian-accent {
+  color: #FF8C42; /* Warm coral color */
+}
+
+.hawaiian-accent-bg {
+  background-color: #FF8C42;
+}
+
+/* Navigation styling */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #FF8C42;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+} 

@@ -1,0 +1,140 @@
+.stageArea {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.turtle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  animation: turtleSwim 4s ease-in-out infinite;
+  bottom: 0;
+  filter: drop-shadow(0 3px 3px rgba(0,0,0,0.2));
+  transition: transform 0.2s ease;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.turtle:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.flipped:hover {
+  transform: scaleX(-1) translateY(-3px) scale(1.1);
+}
+
+.jumping {
+  animation: turtleSurface 1.2s ease-in-out;
+}
+
+.speechBubble {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  bottom: 45px;
+  white-space: nowrap;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+  pointer-events: none;
+  animation: fadeInOut 1.5s ease-in-out;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.speechBubble:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+@keyframes turtleSwim {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes turtleSurface {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Special handling for flipped turtle */
+.flipped.jumping {
+  animation: turtleSurfaceFlipped 1.2s ease-in-out;
+}
+
+@keyframes turtleSurfaceFlipped {
+  0% {
+    transform: scaleX(-1) translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: scaleX(-1) translateY(-15px) rotate(-5deg);
+  }
+  60% {
+    transform: scaleX(-1) translateY(-15px) rotate(5deg);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0) rotate(0deg);
+  }
+} 
