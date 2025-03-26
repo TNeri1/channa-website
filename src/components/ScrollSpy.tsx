@@ -12,11 +12,13 @@ export default function ScrollSpy() {
       let current = '';
       
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
+        // Cast section to HTMLElement to access offsetTop and clientHeight
+        const sectionElement = section as HTMLElement;
+        const sectionTop = sectionElement.offsetTop;
+        const sectionHeight = sectionElement.clientHeight;
         
         if (window.scrollY >= (sectionTop - 100)) {
-          current = section.getAttribute('id') || '';
+          current = sectionElement.getAttribute('id') || '';
         }
       });
       

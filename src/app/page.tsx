@@ -8,7 +8,7 @@ import ProfileImage from "../components/ProfileImage";
 import OceanBackground from "../components/OceanBackground";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
