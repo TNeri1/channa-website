@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans, GeistMono } from 'geist/font'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import "../styles/ocean-background.css";
 import "../styles/hawaiian-theme.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
         </BodyContent>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
