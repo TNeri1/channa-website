@@ -6,7 +6,7 @@ export default function Resume() {
       <div className="mb-8 flex justify-between items-center">
         <div>
           <h2 className="text-2xl font-bold text-blue-900">Channa Hem</h2>
-          <p className="text-lg text-blue-800">Hospitality and Tourism Management Student</p>
+          <p className="text-lg text-blue-800">Hospitality and Tourism Management Student | Aspiring Community Events & Outreach Coordinator</p>
           <div className="mt-2">
             <a href="mailto:hemchanna@go.byuh.edu" className="text-blue-600 hover:underline mr-4">
               hemchanna@go.byuh.edu
@@ -40,14 +40,67 @@ export default function Resume() {
           </ul>
         </div>
       </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold border-b pb-2 mb-4">Event & Project Leadership</h3>
+        
+        <div className="mb-6">
+          <div className="flex justify-between">
+            <h4 className="text-lg font-medium">Lead Logistics Coordinator</h4>
+            <p>2026</p>
+          </div>
+          <p className="italic mb-2">Lā&apos;ie Elementary Family Game Night</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Managed a 7-person volunteer team and designed age-appropriate game activity rotations for 100+ local attendees</li>
+            <li>Drafted and balanced a $2,203 event budget across categories including catering and educational supplies</li>
+            <li>Served as primary point of contact for school leadership and implemented targeted marketing to drive RSVPs</li>
+          </ul>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex justify-between">
+            <h4 className="text-lg font-medium">Session Moderator</h4>
+            <p>2026</p>
+          </div>
+          <p className="italic mb-2">Undergraduate Research Conference (URC)</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Managed room technical setups and strictly enforced presentation timing for university faculty and student presenters</li>
+            <li>Maintained a 100% schedule compliance rate through highly refined professional communication and real-time troubleshooting</li>
+          </ul>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex justify-between">
+            <h4 className="text-lg font-medium">Event Room Manager Volunteer</h4>
+            <p>2026</p>
+          </div>
+          <p className="italic mb-2">BYU-Hawaii Culture Night</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Facilitated precise backstage transitions for over 20 cultural performance chapters in a high-pressure, live setting</li>
+            <li>Managed continuous crowd flows smoothly for a large-scale event, preventing facility damage and operational bottlenecks</li>
+          </ul>
+        </div>
+      </section>
       
       <section className="mb-8">
         <h3 className="text-xl font-semibold border-b pb-2 mb-4">Work Experience</h3>
         
         <div className="mb-6">
           <div className="flex justify-between">
+            <h4 className="text-lg font-medium">Kitched Support Apprenticeship</h4>
+            <p> Apr 2025 – Present</p>
+          </div>
+          <p className="italic mb-2">Polynesian, Laie, HI</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Handling and prepping food for all restaurants and events at the PCC in a team of 10 on a daily basis along with weekly apprenticeship training  towards Restaurant Management certification</li>
+            <li>Welcoming and serving food to around an average of 700 - 900 guests at the Gateway Buffet on a daily basis in a team of 4</li>
+          </ul>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex justify-between">
             <h4 className="text-lg font-medium">Property Service Specialist</h4>
-            <p>Sept 2024 – Present</p>
+            <p>Sept 2024 – Apr 2025</p>
           </div>
           <p className="italic mb-2">Brigham Young University-Hawaii, Laie, HI</p>
           <ul className="list-disc list-inside space-y-1">

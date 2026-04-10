@@ -80,6 +80,9 @@ export default function BodyContent({ children }: { children: ReactNode }) {
                 <Link href="#resume" className="nav-link text-blue-900 wave-link py-1">Resume</Link>
               </li>
               <li className="flex items-center">
+                <Link href="#htm-370" className="nav-link text-blue-900 wave-link py-1">HTM 370</Link>
+              </li>
+              <li className="flex items-center">
                 <a 
                   href="mailto:hemchanna@go.byuh.edu" 
                   className="contact-button"

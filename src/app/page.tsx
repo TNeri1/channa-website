@@ -6,7 +6,6 @@ import Resume from "./resume/page";
 import { useState } from "react";
 import ProfileImage from "../components/ProfileImage";
 import OceanBackground from "../components/OceanBackground";
-import Footer from "../components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -46,7 +45,7 @@ export default function Home() {
             <div className="text-center mb-8">
               <h1 className="text-5xl font-bold mb-2 text-blue-900 flex items-center justify-center">
                 <span className="hibiscus-icon mr-4" aria-hidden="true">🌺</span>
-                Aloha, I'm Channa H. Neri
+                Aloha, I&apos;m Channa H. Neri
                 <span className="hibiscus-icon ml-4" aria-hidden="true">🌺</span>
               </h1>
               <p className="text-lg text-blue-800 italic">Hospitality and Tourism Management Student</p>
@@ -63,20 +62,25 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             <Link href="#about" className="bg-blue-100 p-6 rounded-lg shadow-md transition-all text-center ocean-card">
               <h2 className="font-semibold text-xl mb-2 text-blue-900">About Me</h2>
               <p>Learn more about my journey and passions</p>
             </Link>
             
+            <Link href="#featured-work" className="bg-blue-100 p-6 rounded-lg shadow-md transition-all text-center ocean-card">
+              <h2 className="font-semibold text-xl mb-2 text-blue-900">Portfolio</h2>
+              <p>View my professional highlights and event projects</p>
+            </Link>
+
             <Link href="#resume" className="bg-blue-100 p-6 rounded-lg shadow-md transition-all text-center ocean-card">
               <h2 className="font-semibold text-xl mb-2 text-blue-900">Resume</h2>
               <p>View my qualifications and experience</p>
             </Link>
-            
-            <Link href="mailto:hemchanna@go.byuh.edu" className="bg-blue-100 p-6 rounded-lg shadow-md transition-all text-center ocean-card">
-              <h2 className="font-semibold text-xl mb-2 text-blue-900">Email Me</h2>
-              <p>hemchanna@go.byuh.edu</p>
+
+            <Link href="#htm-370" className="bg-blue-100 p-6 rounded-lg shadow-md transition-all text-center ocean-card">
+              <h2 className="font-semibold text-xl mb-2 text-blue-900">HTM 370</h2>
+              <p>View my course documentation and reflections</p>
             </Link>
           </div>
         </div>
@@ -89,28 +93,35 @@ export default function Home() {
             <h1 className="text-3xl font-bold mb-6 text-blue-900 wave-header">About Me</h1>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="col-span-2">
+              <div className="col-span-1 md:col-span-2">
                 <p className="mb-4">
-                  Born and raised in Cambodia, I developed a deep appreciation for hospitality from an early age. 
-                  Watching how tourism positively impacted local communities inspired me to pursue a career in this field.
+                  Born and raised in Cambodia, I developed a deep appreciation for hospitality from an early age. Watching how 
+                  tourism and community gatherings positively impacted local populations inspired my professional journey. Currently, 
+                  I am a dedicated Hospitality and Tourism Management student at Brigham Young University-Hawaii, equipped with 
+                  both academic rigor and hands-on operational experience.
                 </p>
                 
                 <p className="mb-4">
-                  At Brigham Young University-Hawaii, I&apos;m expanding my knowledge of hospitality management, sustainable 
-                  tourism practices, and cross-cultural communication. I&apos;m particularly interested in how tourism can 
-                  be leveraged as a force for good in developing economies.
+                  As an aspiring <strong>Community Events & Outreach Coordinator</strong>, I specialize in the strategic planning, 
+                  marketing, and execution of programs designed to engage diverse demographics. My coursework and professional 
+                  experiences have provided a robust framework for managing the entire event lifecycle—from initial demographic 
+                  analysis and budgeting to day-of logistics and post-event evaluation. 
                 </p>
                 
                 <p className="mb-4">
-                  In my free time, I enjoy exploring Hawaii&apos;s beautiful beaches, volunteering in community projects, 
-                  and trying new cuisine from around the world.
+                  My professional interests are deeply rooted in <strong>Strategic Communication, Resource Optimization, and Team Leadership</strong> within 
+                  the events and hospitality industries. Whether managing a volunteer team for a local elementary school&apos;s Family Game 
+                  Night, facilitating backstage transitions for a large-scale cultural production, or ensuring strict schedule compliance 
+                  at formal academic conferences, I thrive in fast-paced, high-pressure environments. I firmly believe that an event&apos;s success 
+                  is determined long before the doors open, demanding meticulous logistical mapping and proactive problem-solving.
                 </p>
                 
                 <h2 className="text-xl font-semibold mb-2 mt-6 text-blue-800">My Vision</h2>
                 <p>
-                  I aim to bridge cultural gaps through exceptional hospitality experiences. I believe that 
-                  thoughtful tourism can foster cultural appreciation, economic development, and global 
-                  understanding.
+                  I am passionate about bridging cultural gaps through exceptional events and hospitality experiences. Looking ahead, 
+                  I am committed to evolving as a strategic event leader, pursuing the Certified Meeting Professional (CMP) designation, 
+                  and leveraging data-driven insights to measure ROI and attendee sentiment. My goal is to deliver high-impact programs 
+                  that drive meaningful community and organizational growth.
                 </p>
               </div>
               
@@ -136,6 +147,35 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="content-fade-in rounded-xl shadow-lg p-8 bg-white bg-opacity-80">
             <h1 className="text-3xl font-bold mb-6 text-blue-900 wave-header">Featured Work</h1>
+
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-4">Professional Portfolio View</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-blue-50 rounded-lg p-5 border border-blue-100">
+                  <h3 className="text-lg font-semibold text-blue-900 mb-2">Lā&apos;ie Elementary Family Game Night</h3>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Project Context:</strong> Community outreach event for 100+ local families to strengthen school-community bonds.</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Your Role:</strong> Lead Logistics</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Key Responsibilities:</strong> Designed age-appropriate activity rotations and led a 7-person volunteer team.</p>
+                  <p className="text-sm text-gray-700"><strong>Outcomes/Learning:</strong> Met attendance targets and applied classroom theory in real team operations.</p>
+                </div>
+
+                <div className="bg-blue-50 rounded-lg p-5 border border-blue-100">
+                  <h3 className="text-lg font-semibold text-blue-900 mb-2">Undergraduate Research Conference (URC)</h3>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Project Context:</strong> Formal academic conference requiring professional presentation support.</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Your Role:</strong> Session Moderator</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Key Responsibilities:</strong> Managed room technical setup and enforced strict presentation timing.</p>
+                  <p className="text-sm text-gray-700"><strong>Outcomes/Learning:</strong> Maintained 100% schedule compliance and improved communication/public speaking.</p>
+                </div>
+
+                <div className="bg-blue-50 rounded-lg p-5 border border-blue-100">
+                  <h3 className="text-lg font-semibold text-blue-900 mb-2">BYU-Hawaii Culture Night</h3>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Project Context:</strong> Large-scale production with 20+ performance chapters and 100+ attendees.</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Your Role:</strong> Event Room Manager Volunteer</p>
+                  <p className="text-sm text-gray-700 mb-2"><strong>Key Responsibilities:</strong> Coordinated backstage transitions and managed crowd flow safely.</p>
+                  <p className="text-sm text-gray-700"><strong>Outcomes/Learning:</strong> Built operations leadership in high-pressure, real-time environments.</p>
+                </div>
+              </div>
+            </div>
             
             <div className="space-y-8">
               {/* Featured Work 1 - Egypt */}
@@ -506,6 +546,151 @@ export default function Home() {
             {/* Import and render the Resume component */}
             <div className="bg-blue-50 p-4 rounded-lg shadow-md">
               <Resume />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="htm-370" className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="content-fade-in rounded-xl shadow-lg p-8 bg-white bg-opacity-80">
+            <h1 className="text-3xl font-bold mb-8 text-blue-900 wave-header">HTM 370: Event Management</h1>
+
+            {/* Course Documentation: Evidence Map */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 mb-8 border border-blue-100">
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">Evidence Map: HTM 370</h3>
+              <p className="text-gray-700 mb-4"><strong>Project:</strong> Laie Elementary Reading &amp; Math Family Game Night</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-blue-200">
+                      <th className="border border-blue-300 p-3 text-left font-semibold text-blue-900">Project Section</th>
+                      <th className="border border-blue-300 p-3 text-left font-semibold text-blue-900">Description</th>
+                      <th className="border border-blue-300 p-3 text-left font-semibold text-blue-900">My Contribution</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-700">
+                    <tr className="bg-white hover:bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Event Foundation &amp; Overview</strong></td>
+                      <td className="border border-blue-200 p-3">Strategic framing of the event, including mission alignment and core objectives.</td>
+                      <td className="border border-blue-200 p-3">Developed the event identity and partnership framework between BYUH and Laie Elementary; defined four key objectives including literacy boosting and community building.</td>
+                    </tr>
+                    <tr className="bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Finance &amp; Budgeting</strong></td>
+                      <td className="border border-blue-200 p-3">Comprehensive breakdown of Title I funding allocation and event expenses.</td>
+                      <td className="border border-blue-200 p-3">Drafted the $2,203 event budget; balanced expenses across categories (books, catering, supplies) to maintain a zero net balance.</td>
+                    </tr>
+                    <tr className="bg-white hover:bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Procurement &amp; Vendors</strong></td>
+                      <td className="border border-blue-200 p-3">Identification of specific vendors and detailed cost estimates.</td>
+                      <td className="border border-blue-200 p-3">Researched and secured quotes from BYU-Hawaii Food Services and Scholastic Education Solutions to meet high-volume logistical needs (320 servings/216 books).</td>
+                    </tr>
+                    <tr className="bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Marketing &amp; Promotion</strong></td>
+                      <td className="border border-blue-200 p-3">Multi-channel communication strategy and audience segmentation.</td>
+                      <td className="border border-blue-200 p-3">Developed targeted messaging for parents and students; created a 2-week social media calendar (Facebook/Instagram) to drive RSVPs and event awareness.</td>
+                    </tr>
+                    <tr className="bg-white hover:bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Stakeholder Communication</strong></td>
+                      <td className="border border-blue-200 p-3">Direct correspondence with school leadership and project coordinators.</td>
+                      <td className="border border-blue-200 p-3">Managed professional communication with Title I and PCNC coordinators; served as a primary point of contact for event execution and feedback collection.</td>
+                    </tr>
+                    <tr className="bg-blue-50">
+                      <td className="border border-blue-200 p-3"><strong>Evaluation &amp; Feedback Integration</strong></td>
+                      <td className="border border-blue-200 p-3">Post-event analysis based on client feedback and performance metrics.</td>
+                      <td className="border border-blue-200 p-3">Categorized stakeholder feedback into key performance areas: Operational Agility, Leadership, and Professionalism; linked positive principal feedback to successful project outcomes.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Course Learning Outcome Reflection */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 mb-8 border border-blue-100">
+              <h2 className="text-2xl font-bold text-blue-900 mb-4">Course Learning Outcome (CLO) Reflection</h2>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Introduction</h3>
+                <p className="text-gray-700">
+                  My experience in HTM 370 has been a journey of moving from just learning about event theory to actually running them in the busy Lā&apos;ie community. By working on both local school projects and BYUH university culture night shows, I have connected what I learned in class with the tough demands of the hospitality and tourism business.
+                </p>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Leadership &amp; Teamwork</h3>
+                <p className="text-gray-700">
+                  In my role for the Lā&apos;ie Elementary Family Game Night, I shifted from being a participant to a leader. I learned that leadership in event management is not about control, but about empowerment. Managing a team of 7 student volunteers required clear delegation and trust. I realized that team synergy is highest when every member understands the why behind their station. Whether it was coordinating game rotations or managing the game, I focused on maintaining high levels, which directly translated into a more welcoming atmosphere for the families attending.
+                </p>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Project Management &amp; Communication</h3>
+                <p className="text-gray-700 mb-2">
+                  Project management was the backbone of my work this semester. Utilizing tools like the Run of Event and detailed Logistics for the Lā&apos;ie Elementary Family Game Night taught me that an event&apos;s success is determined months before the doors open.
+                </p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 ml-2">
+                  <li><strong>Communication:</strong> I practiced &quot;360-degree communication,&quot; ensuring that I was communicating upward to faculty and school administrators, laterally to my peers, and downward to volunteers.</li>
+                  <li><strong>Precision:</strong> My work with the Undergraduate Research Conference (URC) highlighted the necessity of administrative precision. Managing a professional schedule where minutes mattered required assertive yet polite communication to keep presenters on track.</li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Evaluation &amp; Continuous Improvement</h3>
+                <p className="text-gray-700">
+                  A significant learning outcome was the shift from &quot;finishing&quot; an event to &quot;evaluating&quot; it. In the past, I viewed the end of an event as the conclusion. HTM 370 taught me that the Post-Event Report is where the most growth happens. By using evaluation tools for the Family Game Night, I was able to identify bottlenecks in the flow of the cafeteria layout. This data-driven approach is what separates an amateur coordinator from a professional event manager. I now understand that feedback, whether from a judge&apos;s rubric at URC or a parent&apos;s comment at the elementary school, is the primary resource for future success.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Conclusion</h3>
+                <p className="text-gray-700">
+                  HTM 370 has equipped me with a toolkit that is both technical and interpersonal. I am graduating with the confidence to manage budgets, design marketing collateral, and lead teams through the unpredictable nature of live events. I look forward to applying these outcomes as I transition into a career in professional event management, where I will continue to prioritize community impact and operational excellence.
+                </p>
+              </div>
+            </div>
+
+            {/* Job Target Page */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 mb-8 border border-blue-100">
+              <h2 className="text-2xl font-bold text-blue-900 mb-4">Job Target Page</h2>
+
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-blue-900 mb-2">Target Role: Community Events &amp; Outreach Coordinator</h3>
+                <p className="text-gray-700 mb-3">
+                  <strong>Role Description:</strong> This role focuses on the strategic planning, marketing, and execution of programs designed to engage specific demographics within a community or organization. It involves managing budgets, coordinating multi-level stakeholders, and conducting post-event evaluations to ensure organizational goals are met.
+                </p>
+                <p className="text-gray-700">
+                  <strong>Why it&apos;s a Fit for HTM 370:</strong> This role is a direct extension of the HTM 370 curriculum, which emphasizes the transition from conceptual planning to operational reality. My coursework required me to manage the exact lifecycle of this role: identifying community needs (Family Game Night), managing large-scale operational logistics (Culture Night), and maintaining professional standards in formal settings (URC).
+                </p>
+              </div>
+            </div>
+
+            {/* Professional Reflection */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-100">
+              <h2 className="text-2xl font-bold text-blue-900 mb-4">Professional Reflection</h2>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Preparation through HTM 370</h3>
+                <p className="text-gray-700">
+                  HTM 370 served as a professional bridge between event theory and operational execution. My coursework provided a rigorous framework for Project Management, specifically through the development of &quot;Run of Show&quot; documents and logistics maps. My work with the Undergraduate Research Conference (URC) and Culture Night case studies taught me to anticipate operational bottlenecks such as registration delays or technical failures before they occur. I have been trained to manage the entire event lifecycle, from initial demographic analysis to final site breakdown, ensuring that every logistical detail aligns with the overarching organizational goals.
+                </p>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Strengths in Planning and Delivery</h3>
+                <p className="text-gray-700">
+                  My core strength lies in Strategic Communication and Resource Optimization. In event management, I&apos;ve found that success depends on the ability to connect with others. Throughout my projects, I have focused on communicating clearly with my teammates, navigating logistical needs with venue managers, and building strong relationships with community stakeholders and parents.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Future Professional Development</h3>
+                <p className="text-gray-700 mb-2">
+                  I am committed to evolving the coordinator into a strategic event leader. My immediate goal is to pursue the Certified Meeting Professional (CMP) designation to formalize my expertise in global event standards.
+                </p>
+                <p className="text-gray-700">
+                  Moving forward, I plan to deepen my mastery of Event Data Analytics. While HTM 370 provided the foundation for post-event evaluation, I aim to integrate more sophisticated digital feedback tools to measure ROI (Return on Investment) and attendee sentiment. By combining my experience in multicultural coordination with a commitment to data-driven improvement, I am prepared to deliver high-impact events that drive community and organizational growth.
+                </p>
+              </div>
             </div>
           </div>
         </div>
