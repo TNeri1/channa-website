@@ -9,6 +9,7 @@ import Footer from './Footer';
 
 export default function BodyContent({ children }: { children: ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Enable smooth scrolling
   useEffect(() => {
@@ -60,12 +61,23 @@ export default function BodyContent({ children }: { children: ReactNode }) {
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center relative">
           <Link href="#home">
             <div className="logo-container relative cursor-pointer">
-              <div className="text-2xl font-bold text-blue-900 logo-text">
+              <div className="text-lg sm:text-2xl font-bold text-blue-900 logo-text">
                 Channa H. Neri
               </div>
             </div>
           </Link>
-          <nav className="flex items-center">
+
+          <button
+            type="button"
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-blue-900 hover:bg-blue-100"
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            <span className="text-2xl leading-none">{mobileMenuOpen ? '×' : '☰'}</span>
+          </button>
+
+          <nav className="hidden md:flex items-center">
             <ul className="flex items-center space-x-6">
               <li className="flex items-center">
                 <Link href="#home" className="nav-link text-blue-900 wave-link py-1">Home</Link>
@@ -93,8 +105,45 @@ export default function BodyContent({ children }: { children: ReactNode }) {
               </li>
             </ul>
           </nav>
-          <TurtleAnimation />
+
+          <div className="hidden md:block">
+            <TurtleAnimation />
+          </div>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-blue-100 bg-white/95 backdrop-blur-sm">
+            <nav className="max-w-6xl mx-auto px-4 py-3">
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <Link href="#home" className="block nav-link text-blue-900 wave-link py-2" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+                </li>
+                <li>
+                  <Link href="#about" className="block nav-link text-blue-900 wave-link py-2" onClick={() => setMobileMenuOpen(false)}>About Me</Link>
+                </li>
+                <li>
+                  <Link href="#featured-work" className="block nav-link text-blue-900 wave-link py-2" onClick={() => setMobileMenuOpen(false)}>Featured Work</Link>
+                </li>
+                <li>
+                  <Link href="#resume" className="block nav-link text-blue-900 wave-link py-2" onClick={() => setMobileMenuOpen(false)}>Resume</Link>
+                </li>
+                <li>
+                  <Link href="#htm-370" className="block nav-link text-blue-900 wave-link py-2" onClick={() => setMobileMenuOpen(false)}>HTM 370</Link>
+                </li>
+                <li>
+                  <a
+                    href="mailto:hemchanna@go.byuh.edu"
+                    className="inline-flex contact-button mt-1"
+                    aria-label="Contact me via email"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Contact Me
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        )}
       </header>
       
       {/* Add padding to the top to account for the fixed header */}

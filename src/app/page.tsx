@@ -40,15 +40,15 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex flex-col items-center justify-center gap-8 py-4">
-        <div className="content-fade-in rounded-xl shadow-lg p-8 max-w-4xl w-full mx-auto mt-8 bg-white bg-opacity-80">
+        <div className="content-fade-in rounded-xl shadow-lg p-4 sm:p-8 max-w-4xl w-full mx-auto mt-4 sm:mt-8 bg-white bg-opacity-80">
           <div className="flex flex-col items-center">
-            <div className="text-center mb-8">
-              <h1 className="text-5xl font-bold mb-2 text-blue-900 flex items-center justify-center">
+            <div className="text-center mb-6 sm:mb-8">
+              <h1 className="text-3xl sm:text-5xl font-bold mb-2 text-blue-900 flex flex-wrap items-center justify-center leading-tight">
                 <span className="hibiscus-icon mr-4" aria-hidden="true">🌺</span>
                 Aloha, I&apos;m Channa H. Neri
                 <span className="hibiscus-icon ml-4" aria-hidden="true">🌺</span>
               </h1>
-              <p className="text-lg text-blue-800 italic">Hospitality and Tourism Management Student</p>
+              <p className="text-base sm:text-lg text-blue-800 italic">Hospitality and Tourism Management Student</p>
             </div>
             
             {/* Use the ProfileImage component */}

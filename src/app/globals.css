@@ -319,6 +319,32 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .social-icons {
+    top: auto;
+    bottom: 16px;
+    right: 50%;
+    transform: translateX(50%);
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hibiscus-icon {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+
+  .wave-link:after {
+    bottom: -1px;
+  }
+}
+
 /* Hibiscus flower animation */
 .hibiscus-icon {
   display: inline-block;

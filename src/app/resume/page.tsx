@@ -3,10 +3,10 @@ export default function Resume() {
     <div className="max-w-4xl mx-auto">
       {/* <h1 className="text-3xl font-bold mb-6 text-blue-900">Resume</h1> */}
       
-      <div className="mb-8 flex justify-between items-center">
+      <div className="mb-8 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
         <div>
           <h2 className="text-2xl font-bold text-blue-900">Channa Hem</h2>
-          <p className="text-lg text-blue-800">Hospitality and Tourism Management Student | Aspiring Community Events & Outreach Coordinator</p>
+          <p className="text-base sm:text-lg text-blue-800">Hospitality and Tourism Management Student | Aspiring Community Events & Outreach Coordinator</p>
           <div className="mt-2">
             <a href="mailto:hemchanna@go.byuh.edu" className="text-blue-600 hover:underline mr-4">
               hemchanna@go.byuh.edu
@@ -29,7 +29,7 @@ export default function Resume() {
         <h3 className="text-xl font-semibold border-b pb-2 mb-4">Education</h3>
         
         <div className="mb-4">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Brigham Young University – Hawaii</h4>
             <p>July 2026</p>
           </div>
@@ -45,7 +45,7 @@ export default function Resume() {
         <h3 className="text-xl font-semibold border-b pb-2 mb-4">Event & Project Leadership</h3>
         
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Lead Logistics Coordinator</h4>
             <p>2026</p>
           </div>
@@ -58,7 +58,7 @@ export default function Resume() {
         </div>
 
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Session Moderator</h4>
             <p>2026</p>
           </div>
@@ -70,7 +70,7 @@ export default function Resume() {
         </div>
 
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Event Room Manager Volunteer</h4>
             <p>2026</p>
           </div>
@@ -86,7 +86,7 @@ export default function Resume() {
         <h3 className="text-xl font-semibold border-b pb-2 mb-4">Work Experience</h3>
         
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Kitched Support Apprenticeship</h4>
             <p> Apr 2025 – Present</p>
           </div>
@@ -98,7 +98,7 @@ export default function Resume() {
         </div>
 
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Property Service Specialist</h4>
             <p>Sept 2024 – Apr 2025</p>
           </div>
@@ -110,7 +110,7 @@ export default function Resume() {
         </div>
         
         <div className="mb-6">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
             <h4 className="text-lg font-medium">Single Student Housing Resident Advisor/Mentor</h4>
             <p>Oct 2023 – Sept 2024</p>
           </div>
