@@ -1,3 +1,5 @@
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 // Common type definitions for the website
 
 // For featured work case studies
@@ -20,6 +22,6 @@ export interface NavItem {
 export interface SocialLink {
   name: string;
   url: string;
-  icon: unknown; // FontAwesome icon
+  icon: IconProp;
   color: string;
 }
