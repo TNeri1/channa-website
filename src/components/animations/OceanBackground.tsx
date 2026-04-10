@@ -67,7 +67,6 @@ const OceanBackground = () => {
         // Wave properties vary by index for more natural look
         const waveLength = waves.length * (1 + i * 0.4);
         const amplitude = waves.amplitude * (1 + i * 0.3);
-        const frequency = waves.frequency * (1 + i * 0.2);
         const phase = i * Math.PI / 3; // Increased phase shift
         const yOffset = canvas.height * (0.3 + i * 0.15); // More spread out
         

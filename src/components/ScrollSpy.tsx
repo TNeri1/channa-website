@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default function ScrollSpy() {
-  const [activeSection, setActiveSection] = useState<string>('');
-
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
     
@@ -15,14 +13,11 @@ export default function ScrollSpy() {
         // Cast to HTMLElement to access layout properties
         const htmlSection = section as HTMLElement;
         const sectionTop = htmlSection.offsetTop;
-        const sectionHeight = htmlSection.clientHeight;
         
         if (window.scrollY >= (sectionTop - 100)) {
           current = section.getAttribute('id') || '';
         }
       });
-      
-      setActiveSection(current);
       
       // Update nav links
       document.querySelectorAll('.nav-link').forEach(link => {

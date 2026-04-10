@@ -20,6 +20,6 @@ export interface NavItem {
 export interface SocialLink {
   name: string;
   url: string;
-  icon: any; // FontAwesome icon
+  icon: unknown; // FontAwesome icon
   color: string;
 }

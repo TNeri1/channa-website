@@ -26,7 +26,7 @@ export default function ProfileImage() {
             setImageLoaded(true);
             return;
           }
-        } catch (e) {
+        } catch {
           console.log(`Failed to find image at ${path}`);
         }
       }

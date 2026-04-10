@@ -14,7 +14,6 @@ export default function ScrollSpy() {
       // Cast to HTMLElement to access layout properties
       const htmlSection = section as HTMLElement;
       const sectionTop = htmlSection.offsetTop;
-      const sectionHeight = htmlSection.clientHeight;
       
       // Consider a section active if we've scrolled to it (with a small offset)
       // or if we're within the section

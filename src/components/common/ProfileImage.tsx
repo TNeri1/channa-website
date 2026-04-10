@@ -25,7 +25,7 @@ export default function ProfileImage() {
             setImageLoaded(true);
             return;
           }
-        } catch (e) {
+        } catch {
           // Continue to next path
         }
       }
